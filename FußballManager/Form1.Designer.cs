@@ -51,7 +51,7 @@
             // 
             // PlayerInput
             // 
-            PlayerInput.BackColor = SystemColors.ScrollBar;
+            PlayerInput.BackColor = Color.Ivory;
             PlayerInput.ForeColor = SystemColors.ControlText;
             PlayerInput.Location = new Point(12, 65);
             PlayerInput.Name = "PlayerInput";
@@ -75,7 +75,7 @@
             // 
             // PlayerList
             // 
-            PlayerList.BackColor = SystemColors.ScrollBar;
+            PlayerList.BackColor = Color.Ivory;
             PlayerList.FormattingEnabled = true;
             PlayerList.ItemHeight = 25;
             PlayerList.Location = new Point(326, 12);
@@ -166,7 +166,7 @@
             // 
             // MannschaftInput
             // 
-            MannschaftInput.BackColor = SystemColors.ScrollBar;
+            MannschaftInput.BackColor = Color.Ivory;
             MannschaftInput.Location = new Point(12, 12);
             MannschaftInput.Name = "MannschaftInput";
             MannschaftInput.PlaceholderText = "Hier Mannschaftsname eingeben!";
@@ -176,7 +176,7 @@
             // 
             // AlterInput
             // 
-            AlterInput.BackColor = SystemColors.ScrollBar;
+            AlterInput.BackColor = Color.Ivory;
             AlterInput.Location = new Point(12, 115);
             AlterInput.Name = "AlterInput";
             AlterInput.PlaceholderText = "Hier Alter eingeben!";
@@ -187,7 +187,7 @@
             // 
             // PositionInput
             // 
-            PositionInput.BackColor = SystemColors.ScrollBar;
+            PositionInput.BackColor = Color.Ivory;
             PositionInput.Location = new Point(12, 169);
             PositionInput.Name = "PositionInput";
             PositionInput.PlaceholderText = "Hier Position eingeben!";
