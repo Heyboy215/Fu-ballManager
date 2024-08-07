@@ -121,10 +121,9 @@ namespace FußballManager
             Alter.Text = null;
             Position.Text = null;
         }
-
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SpeicherButton_Click(object sender, EventArgs e)
@@ -136,7 +135,7 @@ namespace FußballManager
                     var json = JsonConvert.SerializeObject(spielerList);
                     writer.WriteRaw(json);
                 }
-            }
+            } 
         }
 
         private void LoadData()
