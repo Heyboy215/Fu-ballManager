@@ -67,7 +67,7 @@ namespace FußballManager
                 Spieler spieler = spielerList.Find(spieler => spieler.Spielername == spielerName);
 
                 Mannschaftsname.Text = spieler.Mannschaftsname;
-                Spielername.Text = spieler.Spielername; 
+                Spielername.Text = spieler.Spielername;
                 Alter.Text = spieler.Alter.ToString();
                 Position.Text = spieler.Position;
             }
