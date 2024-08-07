@@ -16,7 +16,7 @@ namespace FußballManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void HinzuButton_Click(object sender, EventArgs e)
@@ -124,9 +124,9 @@ namespace FußballManager
 
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
-        
+
         private void SpeicherButton_Click(object sender, EventArgs e)
         {
             using (StreamWriter stream = new StreamWriter("Spielerdaten.json"))
@@ -136,7 +136,7 @@ namespace FußballManager
                     var json = JsonConvert.SerializeObject(spielerList);
                     writer.WriteRaw(json);
                 }
-            } 
+            }
         }
 
         private void LoadData()
@@ -173,6 +173,14 @@ namespace FußballManager
                 PositionInput.Text = spieler.Position;
 
                 LöschenButton_Click(sender, e);
+            }
+        }
+
+        private void SpeicherButton_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                SpeicherButton_Click(sender, e);
             }
         }
     }

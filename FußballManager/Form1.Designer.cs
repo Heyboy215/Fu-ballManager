@@ -217,6 +217,7 @@
             SpeicherButton.Text = "Speichern";
             SpeicherButton.UseVisualStyleBackColor = false;
             SpeicherButton.Click += SpeicherButton_Click;
+            SpeicherButton.KeyPress += SpeicherButton_KeyPress;
             // 
             // BearbeitenButton
             // 
