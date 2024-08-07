@@ -59,5 +59,15 @@ namespace FußballManager.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fussball_fussball_logo {
+            get {
+                object obj = ResourceManager.GetObject("fussball-fussball-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
