@@ -51,6 +51,7 @@
             // 
             // PlayerInput
             // 
+            PlayerInput.BackColor = SystemColors.ScrollBar;
             PlayerInput.ForeColor = SystemColors.ControlText;
             PlayerInput.Location = new Point(12, 65);
             PlayerInput.Name = "PlayerInput";
@@ -74,6 +75,7 @@
             // 
             // PlayerList
             // 
+            PlayerList.BackColor = SystemColors.ScrollBar;
             PlayerList.FormattingEnabled = true;
             PlayerList.ItemHeight = 25;
             PlayerList.Location = new Point(326, 12);
@@ -87,6 +89,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Window;
             label1.Location = new Point(12, 408);
             label1.Name = "label1";
             label1.Size = new Size(108, 25);
@@ -97,6 +100,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.Window;
             label2.Location = new Point(12, 446);
             label2.Name = "label2";
             label2.Size = new Size(113, 25);
@@ -106,6 +110,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.Window;
             label3.Location = new Point(12, 486);
             label3.Name = "label3";
             label3.Size = new Size(53, 25);
@@ -115,6 +120,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.Window;
             label4.Location = new Point(12, 523);
             label4.Name = "label4";
             label4.Size = new Size(79, 25);
@@ -125,6 +131,7 @@
             // Mannschaftsname
             // 
             Mannschaftsname.AutoSize = true;
+            Mannschaftsname.ForeColor = SystemColors.Window;
             Mannschaftsname.Location = new Point(134, 408);
             Mannschaftsname.Name = "Mannschaftsname";
             Mannschaftsname.Size = new Size(0, 25);
@@ -133,6 +140,7 @@
             // Spielername
             // 
             Spielername.AutoSize = true;
+            Spielername.ForeColor = SystemColors.Window;
             Spielername.Location = new Point(134, 446);
             Spielername.Name = "Spielername";
             Spielername.Size = new Size(0, 25);
@@ -141,6 +149,7 @@
             // Alter
             // 
             Alter.AutoSize = true;
+            Alter.ForeColor = SystemColors.Window;
             Alter.Location = new Point(134, 486);
             Alter.Name = "Alter";
             Alter.Size = new Size(0, 25);
@@ -149,6 +158,7 @@
             // Position
             // 
             Position.AutoSize = true;
+            Position.ForeColor = SystemColors.Window;
             Position.Location = new Point(134, 523);
             Position.Name = "Position";
             Position.Size = new Size(0, 25);
@@ -156,6 +166,7 @@
             // 
             // MannschaftInput
             // 
+            MannschaftInput.BackColor = SystemColors.ScrollBar;
             MannschaftInput.Location = new Point(12, 12);
             MannschaftInput.Name = "MannschaftInput";
             MannschaftInput.PlaceholderText = "Hier Mannschaftsname eingeben!";
@@ -165,6 +176,7 @@
             // 
             // AlterInput
             // 
+            AlterInput.BackColor = SystemColors.ScrollBar;
             AlterInput.Location = new Point(12, 115);
             AlterInput.Name = "AlterInput";
             AlterInput.PlaceholderText = "Hier Alter eingeben!";
@@ -175,6 +187,7 @@
             // 
             // PositionInput
             // 
+            PositionInput.BackColor = SystemColors.ScrollBar;
             PositionInput.Location = new Point(12, 169);
             PositionInput.Name = "PositionInput";
             PositionInput.PlaceholderText = "Hier Position eingeben!";
@@ -220,6 +233,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.Window;
             label5.Location = new Point(12, 354);
             label5.Name = "label5";
             label5.Size = new Size(258, 38);
@@ -230,7 +244,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Info;
+            BackColor = Color.Black;
             ClientSize = new Size(979, 599);
             Controls.Add(label5);
             Controls.Add(BearbeitenButton);
