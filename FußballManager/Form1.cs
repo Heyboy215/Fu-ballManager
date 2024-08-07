@@ -16,7 +16,7 @@ namespace FußballManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void HinzuButton_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace FußballManager
 
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
         
 
@@ -137,7 +137,7 @@ namespace FußballManager
                     var json = JsonConvert.SerializeObject(spielerList);
                     writer.WriteRaw(json);
                 }
-            }
+            } 
         }
 
         private void LoadData()
