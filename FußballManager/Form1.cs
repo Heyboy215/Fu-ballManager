@@ -109,6 +109,7 @@ namespace FußballManager
             if (e.KeyChar == 13)
             {
                 HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
         }
 
