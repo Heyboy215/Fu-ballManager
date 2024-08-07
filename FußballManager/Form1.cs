@@ -40,6 +40,7 @@ namespace FußballManager
             if (e.KeyChar == 13)
             {
                 HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
         }
 
@@ -93,6 +94,7 @@ namespace FußballManager
             if (e.KeyChar == 13)
             {
                 HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
         }
 
@@ -101,6 +103,7 @@ namespace FußballManager
             if (e.KeyChar == 13)
             {
                 HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
         }
 
@@ -121,6 +124,8 @@ namespace FußballManager
             Spielername.Text = null;
             Alter.Text = null;
             Position.Text = null;
+
+            SpeicherButton_Click(sender, e);
         }
 
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
