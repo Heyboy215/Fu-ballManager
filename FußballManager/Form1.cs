@@ -125,7 +125,7 @@ namespace FußballManager
             Alter.Text = null;
             Position.Text = null;
 
-            SpeicherButton_Click(sender, e);
+            SpeicherButton_Click(sender, e); 
         }
 
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
