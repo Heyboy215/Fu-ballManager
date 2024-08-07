@@ -80,7 +80,7 @@
             PlayerList.MultiColumn = true;
             PlayerList.Name = "PlayerList";
             PlayerList.Size = new Size(641, 579);
-            PlayerList.TabIndex = 13;
+            PlayerList.TabIndex = 17;
             PlayerList.SelectedIndexChanged += PlayerList_SelectedIndexChanged;
             PlayerList.SelectedValueChanged += PlayerList_SelectedValueChanged;
             // 
@@ -90,7 +90,7 @@
             label1.Location = new Point(12, 408);
             label1.Name = "label1";
             label1.Size = new Size(108, 25);
-            label1.TabIndex = 5;
+            label1.TabIndex = 9;
             label1.Text = "Mannschaft:";
             label1.Click += label1_Click;
             // 
@@ -100,7 +100,7 @@
             label2.Location = new Point(12, 446);
             label2.Name = "label2";
             label2.Size = new Size(113, 25);
-            label2.TabIndex = 6;
+            label2.TabIndex = 10;
             label2.Text = "Spielername:";
             // 
             // label3
@@ -109,7 +109,7 @@
             label3.Location = new Point(12, 486);
             label3.Name = "label3";
             label3.Size = new Size(53, 25);
-            label3.TabIndex = 7;
+            label3.TabIndex = 11;
             label3.Text = "Alter:";
             // 
             // label4
@@ -118,7 +118,7 @@
             label4.Location = new Point(12, 523);
             label4.Name = "label4";
             label4.Size = new Size(79, 25);
-            label4.TabIndex = 8;
+            label4.TabIndex = 12;
             label4.Text = "Position:";
             label4.Click += label4_Click;
             // 
@@ -128,7 +128,7 @@
             Mannschaftsname.Location = new Point(134, 408);
             Mannschaftsname.Name = "Mannschaftsname";
             Mannschaftsname.Size = new Size(0, 25);
-            Mannschaftsname.TabIndex = 9;
+            Mannschaftsname.TabIndex = 13;
             // 
             // Spielername
             // 
@@ -136,7 +136,7 @@
             Spielername.Location = new Point(134, 446);
             Spielername.Name = "Spielername";
             Spielername.Size = new Size(0, 25);
-            Spielername.TabIndex = 10;
+            Spielername.TabIndex = 14;
             // 
             // Alter
             // 
@@ -144,7 +144,7 @@
             Alter.Location = new Point(134, 486);
             Alter.Name = "Alter";
             Alter.Size = new Size(0, 25);
-            Alter.TabIndex = 11;
+            Alter.TabIndex = 15;
             // 
             // Position
             // 
@@ -152,7 +152,7 @@
             Position.Location = new Point(134, 523);
             Position.Name = "Position";
             Position.Size = new Size(0, 25);
-            Position.TabIndex = 12;
+            Position.TabIndex = 16;
             // 
             // MannschaftInput
             // 
@@ -189,7 +189,7 @@
             LöschenButton.Location = new Point(168, 264);
             LöschenButton.Name = "LöschenButton";
             LöschenButton.Size = new Size(152, 34);
-            LöschenButton.TabIndex = 14;
+            LöschenButton.TabIndex = 7;
             LöschenButton.Text = "Löschen";
             LöschenButton.UseVisualStyleBackColor = false;
             LöschenButton.Click += LöschenButton_Click;
@@ -200,7 +200,7 @@
             SpeicherButton.Location = new Point(168, 224);
             SpeicherButton.Name = "SpeicherButton";
             SpeicherButton.Size = new Size(152, 34);
-            SpeicherButton.TabIndex = 16;
+            SpeicherButton.TabIndex = 5;
             SpeicherButton.Text = "Speichern";
             SpeicherButton.UseVisualStyleBackColor = false;
             SpeicherButton.Click += SpeicherButton_Click;
@@ -211,7 +211,7 @@
             BearbeitenButton.Location = new Point(12, 264);
             BearbeitenButton.Name = "BearbeitenButton";
             BearbeitenButton.Size = new Size(150, 34);
-            BearbeitenButton.TabIndex = 17;
+            BearbeitenButton.TabIndex = 6;
             BearbeitenButton.Text = "Bearbeiten";
             BearbeitenButton.UseVisualStyleBackColor = false;
             BearbeitenButton.Click += BearbeitenButton_Click;
@@ -223,7 +223,7 @@
             label5.Location = new Point(12, 354);
             label5.Name = "label5";
             label5.Size = new Size(258, 38);
-            label5.TabIndex = 18;
+            label5.TabIndex = 8;
             label5.Text = "Gewählter Spieler:";
             // 
             // Form1
