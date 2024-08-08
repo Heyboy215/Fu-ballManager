@@ -81,7 +81,7 @@
             PlayerList.Location = new Point(326, 12);
             PlayerList.MultiColumn = true;
             PlayerList.Name = "PlayerList";
-            PlayerList.Size = new Size(1131, 1004);
+            PlayerList.Size = new Size(1137, 854);
             PlayerList.TabIndex = 17;
             PlayerList.SelectedIndexChanged += PlayerList_SelectedIndexChanged;
             PlayerList.SelectedValueChanged += PlayerList_SelectedValueChanged;
