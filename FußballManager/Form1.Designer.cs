@@ -56,6 +56,9 @@
             LänderspieleTore = new Label();
             label8 = new Label();
             Größe = new Label();
+            pictureBox1 = new PictureBox();
+            BildHochladen = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // PlayerInput
@@ -92,6 +95,7 @@
             PlayerList.Name = "PlayerList";
             PlayerList.Size = new Size(619, 854);
             PlayerList.TabIndex = 17;
+            PlayerList.Click += PlayerList_SelectedValueChanged;
             PlayerList.SelectedIndexChanged += PlayerList_SelectedIndexChanged;
             PlayerList.SelectedValueChanged += PlayerList_SelectedValueChanged;
             // 
@@ -110,7 +114,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.Window;
-            label2.Location = new Point(1069, 125);
+            label2.Location = new Point(1069, 112);
             label2.Name = "label2";
             label2.Size = new Size(113, 25);
             label2.TabIndex = 10;
@@ -120,17 +124,18 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(1069, 165);
+            label3.Location = new Point(1069, 137);
             label3.Name = "label3";
             label3.Size = new Size(53, 25);
             label3.TabIndex = 11;
             label3.Text = "Alter:";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.ForeColor = SystemColors.Window;
-            label4.Location = new Point(1069, 243);
+            label4.Location = new Point(1069, 187);
             label4.Name = "label4";
             label4.Size = new Size(79, 25);
             label4.TabIndex = 12;
@@ -150,7 +155,7 @@
             // 
             Spielername.AutoSize = true;
             Spielername.ForeColor = SystemColors.Window;
-            Spielername.Location = new Point(1245, 125);
+            Spielername.Location = new Point(1245, 112);
             Spielername.Name = "Spielername";
             Spielername.Size = new Size(0, 25);
             Spielername.TabIndex = 14;
@@ -159,7 +164,7 @@
             // 
             Alter.AutoSize = true;
             Alter.ForeColor = SystemColors.Window;
-            Alter.Location = new Point(1245, 165);
+            Alter.Location = new Point(1245, 137);
             Alter.Name = "Alter";
             Alter.Size = new Size(0, 25);
             Alter.TabIndex = 15;
@@ -168,7 +173,7 @@
             // 
             Position.AutoSize = true;
             Position.ForeColor = SystemColors.Window;
-            Position.Location = new Point(1245, 243);
+            Position.Location = new Point(1245, 187);
             Position.Name = "Position";
             Position.Size = new Size(0, 25);
             Position.TabIndex = 16;
@@ -254,7 +259,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.ControlLight;
-            label6.Location = new Point(1069, 284);
+            label6.Location = new Point(1069, 212);
             label6.Name = "label6";
             label6.Size = new Size(96, 25);
             label6.TabIndex = 18;
@@ -265,7 +270,7 @@
             // 
             Transferwert.AutoSize = true;
             Transferwert.ForeColor = SystemColors.ControlLight;
-            Transferwert.Location = new Point(1245, 284);
+            Transferwert.Location = new Point(1245, 212);
             Transferwert.Name = "Transferwert";
             Transferwert.Size = new Size(0, 25);
             Transferwert.TabIndex = 19;
@@ -306,7 +311,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.ControlLight;
-            label7.Location = new Point(1069, 324);
+            label7.Location = new Point(1069, 237);
             label7.Name = "label7";
             label7.Size = new Size(154, 25);
             label7.TabIndex = 23;
@@ -316,7 +321,7 @@
             // 
             LänderspieleTore.AutoSize = true;
             LänderspieleTore.ForeColor = SystemColors.ControlLight;
-            LänderspieleTore.Location = new Point(1245, 324);
+            LänderspieleTore.Location = new Point(1245, 237);
             LänderspieleTore.Name = "LänderspieleTore";
             LänderspieleTore.Size = new Size(0, 25);
             LänderspieleTore.TabIndex = 24;
@@ -325,7 +330,7 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = SystemColors.ControlLight;
-            label8.Location = new Point(1069, 204);
+            label8.Location = new Point(1069, 162);
             label8.Name = "label8";
             label8.Size = new Size(64, 25);
             label8.TabIndex = 25;
@@ -335,10 +340,34 @@
             // 
             Größe.AutoSize = true;
             Größe.ForeColor = SystemColors.ControlLight;
-            Größe.Location = new Point(1245, 204);
+            Größe.Location = new Point(1245, 162);
             Größe.Name = "Größe";
             Größe.Size = new Size(0, 25);
             Größe.TabIndex = 26;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(1049, 403);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(408, 412);
+            pictureBox1.TabIndex = 27;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += PlayerList_SelectedIndexChanged;
+            // 
+            // BildHochladen
+            // 
+            BildHochladen.BackColor = SystemColors.Desktop;
+            BildHochladen.FlatAppearance.BorderColor = SystemColors.ActiveCaptionText;
+            BildHochladen.FlatAppearance.BorderSize = 0;
+            BildHochladen.FlatStyle = FlatStyle.Flat;
+            BildHochladen.ForeColor = SystemColors.ControlLight;
+            BildHochladen.Location = new Point(1049, 822);
+            BildHochladen.Name = "BildHochladen";
+            BildHochladen.Size = new Size(408, 45);
+            BildHochladen.TabIndex = 28;
+            BildHochladen.Text = "Bild Hochladen ";
+            BildHochladen.UseVisualStyleBackColor = false;
+            BildHochladen.Click += BildHochladen_Click;
             // 
             // Form1
             // 
@@ -346,6 +375,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1469, 874);
+            Controls.Add(BildHochladen);
+            Controls.Add(pictureBox1);
             Controls.Add(Größe);
             Controls.Add(label8);
             Controls.Add(LänderspieleTore);
@@ -378,6 +409,7 @@
             Name = "Form1";
             Text = "FußballManager";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -411,5 +443,7 @@
         private Label LänderspieleTore;
         private Label label8;
         private Label Größe;
+        private PictureBox pictureBox1;
+        private Button BildHochladen;
     }
 }

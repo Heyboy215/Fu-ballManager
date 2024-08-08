@@ -1,5 +1,6 @@
 using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json;
+using System.Windows.Forms;
 
 namespace FußballManager
 {
@@ -227,10 +228,10 @@ namespace FußballManager
 
         private void LänderspieleToreInput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 13) 
+            if (e.KeyChar == 13)
             {
-            HinzuButton_Click(sender, e);
-            SpeicherButton_KeyPress(sender, e);
+                HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
 
         }
@@ -238,6 +239,39 @@ namespace FußballManager
         private void GrößeInput_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BildHochladen_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+                openFileDialog.Title = "Select an Image";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string sourceFilePath = openFileDialog.FileName;
+
+                    pictureBox1.Image = new Bitmap(sourceFilePath);
+
+                    string targetFolder = Path.Combine(Application.StartupPath, "UploadedImages");
+
+                    if (!Directory.Exists(targetFolder))
+                    {
+                        Directory.CreateDirectory(targetFolder);
+                    }
+
+                    string fileName = Path.GetFileName(sourceFilePath);
+                    string targetFilePath = Path.Combine(targetFolder, fileName);
+
+                    File.Copy(sourceFilePath, targetFilePath, true);
+                }
+            }
         }
     }
 }
