@@ -15,13 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_D5CB63603E6E468495FA04BBC08F162A"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D84323501E5C4014842E5142E07EDC94"
+        "MsmKey" = "8:_8614154B063348E5B074CC1F6FE855F7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -76,11 +70,21 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_09B771E5A9DE4E8DAFA09CB00875F415"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
             }
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D5CB63603E6E468495FA04BBC08F162A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8614154B063348E5B074CC1F6FE855F7"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Downloads\\fussball-fussball-logo.ico"
             "TargetName" = "8:fussball-fussball-logo.ico"
@@ -157,7 +161,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Management"
         "ProductCode" = "8:{04102D05-34FE-407E-94A1-159E33308803}"
-        "PackageCode" = "8:{0D05F345-FE1F-4E50-9730-B13F76E53473}"
+        "PackageCode" = "8:{E8853F3E-79DC-4C2E-ADAC-30F9CDFB3027}"
         "UpgradeCode" = "8:{88DFD2D3-2F00-475B-99EA-457F692CAD8D}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -277,34 +281,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2D3C2B4890CF4C81A794DEB45FB54F57"
-            {
-            "Name" = "8:Mangement"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_D84323501E5C4014842E5142E07EDC94"
-            "Folder" = "8:_9F6F6AAA8A4644C6836BD28FCA06CB6B"
-            "WorkingFolder" = "8:_6F09B4BDEB0E44DB892D8CC0D33E6A1D"
-            "Icon" = "8:_D5CB63603E6E468495FA04BBC08F162A"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_835ACBC3B440418ABB522473F94B922B"
-            {
-            "Name" = "8:Management"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_D84323501E5C4014842E5142E07EDC94"
-            "Folder" = "8:_98F1FE63D2E84C94A4E08A504B12E9F4"
-            "WorkingFolder" = "8:_6F09B4BDEB0E44DB892D8CC0D33E6A1D"
-            "Icon" = "8:_D5CB63603E6E468495FA04BBC08F162A"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {
@@ -704,34 +680,6 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D84323501E5C4014842E5142E07EDC94"
-            {
-            "SourcePath" = "8:..\\FußballManager\\obj\\Debug\\net8.0-windows\\apphost.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_6F09B4BDEB0E44DB892D8CC0D33E6A1D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:PublishItems"
-            "OutputProjectGuid" = "8:{7954BC02-DDD1-47EE-BFC5-BEDFAF4F3EB4}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
         }
     }
 }

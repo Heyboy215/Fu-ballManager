@@ -26,13 +26,14 @@ namespace FußballManager
             int alter;
             int.TryParse(AlterInput.Text, out alter);
 
-            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, alter, PositionInput.Text);
+            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, alter, PositionInput.Text, TransferwertInput.Text);
             spielerList.Add(spieler);
 
             PlayerInput.Text = null;
             PositionInput.Text = null;
             AlterInput.Text = null;
             MannschaftInput.Text = null;
+            TransferwertInput.Text = null;
         }
 
         private void PlayerInput_KeyPress(object sender, KeyPressEventArgs e)
@@ -71,6 +72,7 @@ namespace FußballManager
                 Spielername.Text = spieler.Spielername;
                 Alter.Text = spieler.Alter.ToString();
                 Position.Text = spieler.Position;
+                Transferwert.Text = spieler.Transferwert;
             }
         }
 
@@ -124,8 +126,9 @@ namespace FußballManager
             Spielername.Text = null;
             Alter.Text = null;
             Position.Text = null;
+            Transferwert.Text = null;
 
-            SpeicherButton_Click(sender, e); 
+            SpeicherButton_Click(sender, e);
         }
 
         private void PlayerList_SelectedIndexChanged(object sender, EventArgs e)
@@ -177,6 +180,7 @@ namespace FußballManager
                 PlayerInput.Text = spieler.Spielername;
                 AlterInput.Text = spieler.Alter.ToString();
                 PositionInput.Text = spieler.Position;
+                TransferwertInput.Text = spieler.Transferwert;
 
                 LöschenButton_Click(sender, e);
             }
@@ -187,6 +191,20 @@ namespace FußballManager
             if (e.KeyChar == 13)
             {
                 SpeicherButton_Click(sender, e);
+            }
+        }
+
+        private void TransferwertInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TransferwertInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
         }
     }
