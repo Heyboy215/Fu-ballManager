@@ -7,7 +7,7 @@
     <ROW Property="Manufacturer" Value="Your Company"/>
     <ROW Property="ProductCode" Value="1033:{4C2B257B-B195-4B95-873C-FCC5EB3AD9DA} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
-    <ROW Property="ProductName" Value="Your Application"/>
+    <ROW Property="ProductName" Value="Management"/>
     <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{F03F83A8-0B66-42B5-BA86-7BF25B1CDEE8}"/>
