@@ -23,17 +23,19 @@ namespace FußballManager
         {
             PlayerList.Items.Add(PlayerInput.Text);
 
-            int alter;
-            int.TryParse(AlterInput.Text, out alter);
+            int Alter;
+            int.TryParse(AlterInput.Text, out Alter);
 
-            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, alter, PositionInput.Text, TransferwertInput.Text);
+            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, Alter, GrößeInput.Text, PositionInput.Text, TransferwertInput.Text, LänderspieleToreInput.Text);
             spielerList.Add(spieler);
 
             PlayerInput.Text = null;
             PositionInput.Text = null;
             AlterInput.Text = null;
+            GrößeInput.Text = null;
             MannschaftInput.Text = null;
             TransferwertInput.Text = null;
+            LänderspieleToreInput.Text = null;
         }
 
         private void PlayerInput_KeyPress(object sender, KeyPressEventArgs e)
@@ -71,8 +73,10 @@ namespace FußballManager
                 Mannschaftsname.Text = spieler.Mannschaftsname;
                 Spielername.Text = spieler.Spielername;
                 Alter.Text = spieler.Alter.ToString();
+                Größe.Text = spieler.Größe;
                 Position.Text = spieler.Position;
                 Transferwert.Text = spieler.Transferwert;
+                LänderspieleTore.Text = spieler.LänderspieleTore;
             }
         }
 
@@ -125,8 +129,10 @@ namespace FußballManager
             Mannschaftsname.Text = null;
             Spielername.Text = null;
             Alter.Text = null;
+            Größe.Text = null;
             Position.Text = null;
             Transferwert.Text = null;
+            LänderspieleTore.Text = null;
 
             SpeicherButton_Click(sender, e);
         }
@@ -179,8 +185,10 @@ namespace FußballManager
                 MannschaftInput.Text = spieler.Mannschaftsname;
                 PlayerInput.Text = spieler.Spielername;
                 AlterInput.Text = spieler.Alter.ToString();
+                GrößeInput.Text = spieler.Größe;
                 PositionInput.Text = spieler.Position;
                 TransferwertInput.Text = spieler.Transferwert;
+                LänderspieleToreInput.Text = spieler.LänderspieleTore;
 
                 LöschenButton_Click(sender, e);
             }
@@ -206,6 +214,35 @@ namespace FußballManager
                 HinzuButton_Click(sender, e);
                 SpeicherButton_KeyPress(sender, e);
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GrößeInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
+            }
+        }
+
+        private void LänderspieleToreInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13) 
+            {
+            HinzuButton_Click(sender, e);
+            SpeicherButton_KeyPress(sender, e);
+            }
+
+        }
+
+        private void GrößeInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
