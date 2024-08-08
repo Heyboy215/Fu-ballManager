@@ -80,11 +80,6 @@ namespace FußballManager
             }
         }
 
-        private void MannschaftInput_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void AlterInput_TextChanged(object sender, EventArgs e)
         {
 

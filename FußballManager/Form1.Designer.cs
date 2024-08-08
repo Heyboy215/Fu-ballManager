@@ -74,7 +74,7 @@
             // 
             HinzuButton.BackColor = Color.FromArgb(128, 128, 255);
             HinzuButton.ForeColor = SystemColors.ActiveCaptionText;
-            HinzuButton.Location = new Point(10, 381);
+            HinzuButton.Location = new Point(10, 749);
             HinzuButton.Name = "HinzuButton";
             HinzuButton.Size = new Size(196, 53);
             HinzuButton.TabIndex = 4;
@@ -90,7 +90,7 @@
             PlayerList.Location = new Point(424, 12);
             PlayerList.MultiColumn = true;
             PlayerList.Name = "PlayerList";
-            PlayerList.Size = new Size(1040, 854);
+            PlayerList.Size = new Size(619, 854);
             PlayerList.TabIndex = 17;
             PlayerList.SelectedIndexChanged += PlayerList_SelectedIndexChanged;
             PlayerList.SelectedValueChanged += PlayerList_SelectedValueChanged;
@@ -99,7 +99,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.Window;
-            label1.Location = new Point(11, 574);
+            label1.Location = new Point(1069, 87);
             label1.Name = "label1";
             label1.Size = new Size(108, 25);
             label1.TabIndex = 9;
@@ -110,7 +110,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.Window;
-            label2.Location = new Point(11, 612);
+            label2.Location = new Point(1069, 125);
             label2.Name = "label2";
             label2.Size = new Size(113, 25);
             label2.TabIndex = 10;
@@ -120,7 +120,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(11, 652);
+            label3.Location = new Point(1069, 165);
             label3.Name = "label3";
             label3.Size = new Size(53, 25);
             label3.TabIndex = 11;
@@ -130,7 +130,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = SystemColors.Window;
-            label4.Location = new Point(11, 730);
+            label4.Location = new Point(1069, 243);
             label4.Name = "label4";
             label4.Size = new Size(79, 25);
             label4.TabIndex = 12;
@@ -141,7 +141,7 @@
             // 
             Mannschaftsname.AutoSize = true;
             Mannschaftsname.ForeColor = SystemColors.Window;
-            Mannschaftsname.Location = new Point(187, 574);
+            Mannschaftsname.Location = new Point(1245, 87);
             Mannschaftsname.Name = "Mannschaftsname";
             Mannschaftsname.Size = new Size(0, 25);
             Mannschaftsname.TabIndex = 13;
@@ -150,7 +150,7 @@
             // 
             Spielername.AutoSize = true;
             Spielername.ForeColor = SystemColors.Window;
-            Spielername.Location = new Point(187, 612);
+            Spielername.Location = new Point(1245, 125);
             Spielername.Name = "Spielername";
             Spielername.Size = new Size(0, 25);
             Spielername.TabIndex = 14;
@@ -159,7 +159,7 @@
             // 
             Alter.AutoSize = true;
             Alter.ForeColor = SystemColors.Window;
-            Alter.Location = new Point(187, 652);
+            Alter.Location = new Point(1245, 165);
             Alter.Name = "Alter";
             Alter.Size = new Size(0, 25);
             Alter.TabIndex = 15;
@@ -168,7 +168,7 @@
             // 
             Position.AutoSize = true;
             Position.ForeColor = SystemColors.Window;
-            Position.Location = new Point(187, 730);
+            Position.Location = new Point(1245, 243);
             Position.Name = "Position";
             Position.Size = new Size(0, 25);
             Position.TabIndex = 16;
@@ -208,7 +208,7 @@
             // LöschenButton
             // 
             LöschenButton.BackColor = Color.FromArgb(255, 128, 128);
-            LöschenButton.Location = new Point(212, 440);
+            LöschenButton.Location = new Point(212, 808);
             LöschenButton.Name = "LöschenButton";
             LöschenButton.Size = new Size(206, 58);
             LöschenButton.TabIndex = 7;
@@ -219,7 +219,7 @@
             // SpeicherButton
             // 
             SpeicherButton.BackColor = Color.FromArgb(192, 255, 192);
-            SpeicherButton.Location = new Point(212, 381);
+            SpeicherButton.Location = new Point(212, 749);
             SpeicherButton.Name = "SpeicherButton";
             SpeicherButton.Size = new Size(206, 53);
             SpeicherButton.TabIndex = 5;
@@ -231,7 +231,7 @@
             // BearbeitenButton
             // 
             BearbeitenButton.BackColor = Color.FromArgb(255, 192, 128);
-            BearbeitenButton.Location = new Point(11, 441);
+            BearbeitenButton.Location = new Point(11, 809);
             BearbeitenButton.Name = "BearbeitenButton";
             BearbeitenButton.Size = new Size(195, 58);
             BearbeitenButton.TabIndex = 6;
@@ -244,7 +244,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.Window;
-            label5.Location = new Point(11, 517);
+            label5.Location = new Point(1069, 30);
             label5.Name = "label5";
             label5.Size = new Size(258, 38);
             label5.TabIndex = 8;
@@ -254,7 +254,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.ControlLight;
-            label6.Location = new Point(11, 771);
+            label6.Location = new Point(1069, 284);
             label6.Name = "label6";
             label6.Size = new Size(96, 25);
             label6.TabIndex = 18;
@@ -265,7 +265,7 @@
             // 
             Transferwert.AutoSize = true;
             Transferwert.ForeColor = SystemColors.ControlLight;
-            Transferwert.Location = new Point(187, 771);
+            Transferwert.Location = new Point(1245, 284);
             Transferwert.Name = "Transferwert";
             Transferwert.Size = new Size(0, 25);
             Transferwert.TabIndex = 19;
@@ -306,7 +306,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.ControlLight;
-            label7.Location = new Point(11, 811);
+            label7.Location = new Point(1069, 324);
             label7.Name = "label7";
             label7.Size = new Size(154, 25);
             label7.TabIndex = 23;
@@ -316,7 +316,7 @@
             // 
             LänderspieleTore.AutoSize = true;
             LänderspieleTore.ForeColor = SystemColors.ControlLight;
-            LänderspieleTore.Location = new Point(187, 811);
+            LänderspieleTore.Location = new Point(1245, 324);
             LänderspieleTore.Name = "LänderspieleTore";
             LänderspieleTore.Size = new Size(0, 25);
             LänderspieleTore.TabIndex = 24;
@@ -325,7 +325,7 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = SystemColors.ControlLight;
-            label8.Location = new Point(11, 691);
+            label8.Location = new Point(1069, 204);
             label8.Name = "label8";
             label8.Size = new Size(64, 25);
             label8.TabIndex = 25;
@@ -335,7 +335,7 @@
             // 
             Größe.AutoSize = true;
             Größe.ForeColor = SystemColors.ControlLight;
-            Größe.Location = new Point(187, 691);
+            Größe.Location = new Point(1245, 204);
             Größe.Name = "Größe";
             Größe.Size = new Size(0, 25);
             Größe.TabIndex = 26;
