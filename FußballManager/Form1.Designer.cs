@@ -70,6 +70,12 @@
             Staatsangehörigkeit = new Label();
             Geburtstag = new Label();
             Geburtsort = new Label();
+            FußInput = new TextBox();
+            VertragInput = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
+            Fuß = new Label();
+            Vertrag = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -271,7 +277,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.ControlLight;
-            label6.Location = new Point(1069, 287);
+            label6.Location = new Point(1069, 337);
             label6.Name = "label6";
             label6.Size = new Size(96, 25);
             label6.TabIndex = 26;
@@ -282,7 +288,7 @@
             // 
             Transferwert.AutoSize = true;
             Transferwert.ForeColor = SystemColors.ControlLight;
-            Transferwert.Location = new Point(1256, 287);
+            Transferwert.Location = new Point(1256, 337);
             Transferwert.Name = "Transferwert";
             Transferwert.Size = new Size(0, 25);
             Transferwert.TabIndex = 37;
@@ -290,7 +296,7 @@
             // TransferwertInput
             // 
             TransferwertInput.BackColor = Color.Ivory;
-            TransferwertInput.Location = new Point(11, 463);
+            TransferwertInput.Location = new Point(11, 574);
             TransferwertInput.Name = "TransferwertInput";
             TransferwertInput.PlaceholderText = "Hier Marktwert eingeben!";
             TransferwertInput.Size = new Size(407, 31);
@@ -301,7 +307,7 @@
             // LänderspieleToreInput
             // 
             LänderspieleToreInput.BackColor = Color.Ivory;
-            LänderspieleToreInput.Location = new Point(10, 580);
+            LänderspieleToreInput.Location = new Point(10, 691);
             LänderspieleToreInput.Name = "LänderspieleToreInput";
             LänderspieleToreInput.PlaceholderText = "Hier Länderspiele/Tore eingeben!";
             LänderspieleToreInput.Size = new Size(407, 31);
@@ -323,7 +329,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.ControlLight;
-            label7.Location = new Point(1069, 337);
+            label7.Location = new Point(1069, 387);
             label7.Name = "label7";
             label7.Size = new Size(154, 25);
             label7.TabIndex = 28;
@@ -333,7 +339,7 @@
             // 
             LänderspieleTore.AutoSize = true;
             LänderspieleTore.ForeColor = SystemColors.ControlLight;
-            LänderspieleTore.Location = new Point(1256, 337);
+            LänderspieleTore.Location = new Point(1256, 387);
             LänderspieleTore.Name = "LänderspieleTore";
             LänderspieleTore.Size = new Size(0, 25);
             LänderspieleTore.TabIndex = 39;
@@ -359,7 +365,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(1049, 407);
+            pictureBox1.Location = new Point(1049, 433);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(408, 412);
             pictureBox1.TabIndex = 27;
@@ -373,9 +379,9 @@
             BildHochladen.FlatAppearance.BorderSize = 0;
             BildHochladen.FlatStyle = FlatStyle.Flat;
             BildHochladen.ForeColor = SystemColors.ControlLight;
-            BildHochladen.Location = new Point(1049, 822);
+            BildHochladen.Location = new Point(1049, 839);
             BildHochladen.Name = "BildHochladen";
-            BildHochladen.Size = new Size(408, 45);
+            BildHochladen.Size = new Size(408, 28);
             BildHochladen.TabIndex = 40;
             BildHochladen.Text = "Bild Hochladen ";
             BildHochladen.UseVisualStyleBackColor = false;
@@ -415,7 +421,7 @@
             // AktNationalspielerInput
             // 
             AktNationalspielerInput.BackColor = Color.Ivory;
-            AktNationalspielerInput.Location = new Point(10, 521);
+            AktNationalspielerInput.Location = new Point(10, 632);
             AktNationalspielerInput.Name = "AktNationalspielerInput";
             AktNationalspielerInput.PlaceholderText = "Hier Akt. Nationalspieler eingeben!";
             AktNationalspielerInput.Size = new Size(407, 31);
@@ -456,7 +462,7 @@
             // 
             label12.AutoSize = true;
             label12.ForeColor = SystemColors.ControlLight;
-            label12.Location = new Point(1069, 312);
+            label12.Location = new Point(1069, 362);
             label12.Name = "label12";
             label12.Size = new Size(169, 25);
             label12.TabIndex = 27;
@@ -466,7 +472,7 @@
             // 
             AktNationalspieler.AutoSize = true;
             AktNationalspieler.ForeColor = SystemColors.ControlLight;
-            AktNationalspieler.Location = new Point(1256, 312);
+            AktNationalspieler.Location = new Point(1256, 362);
             AktNationalspieler.Name = "AktNationalspieler";
             AktNationalspieler.Size = new Size(0, 25);
             AktNationalspieler.TabIndex = 38;
@@ -498,12 +504,74 @@
             Geburtsort.Size = new Size(0, 25);
             Geburtsort.TabIndex = 33;
             // 
+            // FußInput
+            // 
+            FußInput.BackColor = Color.Ivory;
+            FußInput.Location = new Point(11, 465);
+            FußInput.Name = "FußInput";
+            FußInput.PlaceholderText = "Dieses Feld ist noch nicht Verfügbar!";
+            FußInput.Size = new Size(406, 31);
+            FußInput.TabIndex = 41;
+            // 
+            // VertragInput
+            // 
+            VertragInput.BackColor = Color.Ivory;
+            VertragInput.Location = new Point(10, 521);
+            VertragInput.Name = "VertragInput";
+            VertragInput.PlaceholderText = "Dieses Feld ist noch nicht Verfügbar!";
+            VertragInput.Size = new Size(407, 31);
+            VertragInput.TabIndex = 42;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.ForeColor = SystemColors.ControlLight;
+            label13.Location = new Point(1069, 287);
+            label13.Name = "label13";
+            label13.Size = new Size(45, 25);
+            label13.TabIndex = 43;
+            label13.Text = "Fuß:";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.ForeColor = SystemColors.ControlLight;
+            label14.Location = new Point(1069, 312);
+            label14.Name = "label14";
+            label14.Size = new Size(101, 25);
+            label14.TabIndex = 44;
+            label14.Text = "Vertrag bis:";
+            // 
+            // Fuß
+            // 
+            Fuß.AutoSize = true;
+            Fuß.ForeColor = SystemColors.ControlLight;
+            Fuß.Location = new Point(1256, 287);
+            Fuß.Name = "Fuß";
+            Fuß.Size = new Size(0, 25);
+            Fuß.TabIndex = 45;
+            // 
+            // Vertrag
+            // 
+            Vertrag.AutoSize = true;
+            Vertrag.ForeColor = SystemColors.ControlLight;
+            Vertrag.Location = new Point(1256, 312);
+            Vertrag.Name = "Vertrag";
+            Vertrag.Size = new Size(0, 25);
+            Vertrag.TabIndex = 46;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1469, 874);
+            Controls.Add(Vertrag);
+            Controls.Add(Fuß);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(VertragInput);
+            Controls.Add(FußInput);
             Controls.Add(Geburtsort);
             Controls.Add(Geburtstag);
             Controls.Add(Staatsangehörigkeit);
@@ -598,5 +666,11 @@
         private Label Staatsangehörigkeit;
         private Label Geburtstag;
         private Label Geburtsort;
+        private TextBox FußInput;
+        private TextBox VertragInput;
+        private Label label13;
+        private Label label14;
+        private Label Fuß;
+        private Label Vertrag;
     }
 }
