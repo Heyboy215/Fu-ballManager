@@ -345,8 +345,11 @@ namespace FußballManager
 
         private void GeburtsortInput_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == 13)
+            {
             HinzuButton_Click(sender, e);
             SpeicherButton_KeyPress(sender, e);
+            }
         }
 
         private void AktNationalspielerInput_KeyPress(object sender, KeyPressEventArgs e)
