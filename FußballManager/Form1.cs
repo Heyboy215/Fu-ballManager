@@ -1,5 +1,7 @@
 using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json;
+using System.Diagnostics.Eventing.Reader;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 
 namespace FußballManager
@@ -24,32 +26,54 @@ namespace FußballManager
 
         private void HinzuButton_Click(object sender, EventArgs e)
         {
-            PlayerList.Items.Add(PlayerInput.Text);
+            bool foundPlayer = spielerList.Find(spieler => spieler.Spielername == PlayerInput.Text) != null;
 
-            int Alter;
-            int.TryParse(AlterInput.Text, out Alter);
-
-            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, StaatsangehörigkeitInput.Text, GeburtstagInput.Text, GeburtsortInput.Text, Alter, GrößeInput.Text, PositionInput.Text, TransferwertInput.Text, AktNationalspielerInput.Text, LänderspieleToreInput.Text);
-            
-            if (tmpfilepath != null )
+            if (foundPlayer) 
             {
-                spieler.filepath = tmpfilepath;
-                tmpfilepath = null;
+                PlayerInput.Text = null;
+                StaatsangehörigkeitInput.Text = null;
+                GeburtstagInput.Text = null;
+                GeburtsortInput.Text = null;
+                PositionInput.Text = null;
+                AlterInput.Text = null;
+                GrößeInput.Text = null;
+                MannschaftInput.Text = null;
+                TransferwertInput.Text = null;
+                AktNationalspielerInput.Text = null;
+                LänderspieleToreInput.Text = null;
+
+                MessageBox.Show("Dieser Spieler existiert schon!", "Fehler 409");
+            }
+            else 
+            { 
+                PlayerList.Items.Add(PlayerInput.Text);
+
+                int Alter;
+                int.TryParse(AlterInput.Text, out Alter);
+
+                Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, StaatsangehörigkeitInput.Text, GeburtstagInput.Text, GeburtsortInput.Text, Alter, GrößeInput.Text, PositionInput.Text, TransferwertInput.Text, AktNationalspielerInput.Text, LänderspieleToreInput.Text);
+            
+                if (tmpfilepath != null )
+                {
+                    spieler.filepath = tmpfilepath;
+                    tmpfilepath = null;
+                }
+
+                spielerList.Add(spieler);
+    
+                PlayerInput.Text = null;
+                StaatsangehörigkeitInput.Text = null;
+                GeburtstagInput.Text = null;
+                GeburtsortInput.Text = null;
+                PositionInput.Text = null;
+                AlterInput.Text = null;
+                GrößeInput.Text = null;
+                MannschaftInput.Text = null;
+                TransferwertInput.Text = null;
+                AktNationalspielerInput.Text = null;
+                LänderspieleToreInput.Text = null;
             }
 
-            spielerList.Add(spieler);
-
-            PlayerInput.Text = null;
-            StaatsangehörigkeitInput.Text = null;
-            GeburtstagInput.Text = null;
-            GeburtsortInput.Text = null;
-            PositionInput.Text = null;
-            AlterInput.Text = null;
-            GrößeInput.Text = null;
-            MannschaftInput.Text = null;
-            TransferwertInput.Text = null;
-            AktNationalspielerInput.Text = null;
-            LänderspieleToreInput.Text = null;
         }
 
         private void PlayerInput_KeyPress(object sender, KeyPressEventArgs e)
