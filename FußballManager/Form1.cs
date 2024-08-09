@@ -8,6 +8,8 @@ namespace FußballManager
     {
         List<Spieler> spielerList;
 
+        string tmpfilepath;
+
         public Form1()
         {
             spielerList = new List<Spieler>();
@@ -27,15 +29,26 @@ namespace FußballManager
             int Alter;
             int.TryParse(AlterInput.Text, out Alter);
 
-            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, Alter, GrößeInput.Text, PositionInput.Text, TransferwertInput.Text, LänderspieleToreInput.Text);
+            Spieler spieler = new Spieler(MannschaftInput.Text, PlayerInput.Text, StaatsangehörigkeitInput.Text, GeburtstagInput.Text, GeburtsortInput.Text, Alter, GrößeInput.Text, PositionInput.Text, TransferwertInput.Text, AktNationalspielerInput.Text, LänderspieleToreInput.Text);
+            
+            if (tmpfilepath != null )
+            {
+                spieler.filepath = tmpfilepath;
+                tmpfilepath = null;
+            }
+
             spielerList.Add(spieler);
 
             PlayerInput.Text = null;
+            StaatsangehörigkeitInput.Text = null;
+            GeburtstagInput.Text = null;
+            GeburtsortInput.Text = null;
             PositionInput.Text = null;
             AlterInput.Text = null;
             GrößeInput.Text = null;
             MannschaftInput.Text = null;
             TransferwertInput.Text = null;
+            AktNationalspielerInput.Text = null;
             LänderspieleToreInput.Text = null;
         }
 
@@ -73,11 +86,24 @@ namespace FußballManager
 
                 Mannschaftsname.Text = spieler.Mannschaftsname;
                 Spielername.Text = spieler.Spielername;
+                Staatsangehörigkeit.Text = spieler.Staatsangehörigkeit;
+                Geburtstag.Text = spieler.Geburtstag;
+                Geburtsort.Text = spieler.Geburtsort;
                 Alter.Text = spieler.Alter.ToString();
                 Größe.Text = spieler.Größe;
                 Position.Text = spieler.Position;
                 Transferwert.Text = spieler.Transferwert;
+                AktNationalspieler.Text = spieler.AktNationalspieler;
                 LänderspieleTore.Text = spieler.LänderspieleTore;
+
+                if (spieler.filepath != null)
+                {
+                    pictureBox1.Image = new Bitmap(spieler.filepath);
+                }
+                else
+                {
+                    pictureBox1.Image = null;
+                }
             }
         }
 
@@ -124,10 +150,14 @@ namespace FußballManager
             PlayerList.Items.Remove(PlayerList.SelectedItem);
             Mannschaftsname.Text = null;
             Spielername.Text = null;
+            Staatsangehörigkeit.Text = null;
+            Geburtstag.Text = null;
+            Geburtsort.Text = null;
             Alter.Text = null;
             Größe.Text = null;
             Position.Text = null;
             Transferwert.Text = null;
+            AktNationalspieler.Text = null;
             LänderspieleTore.Text = null;
 
             SpeicherButton_Click(sender, e);
@@ -180,11 +210,17 @@ namespace FußballManager
 
                 MannschaftInput.Text = spieler.Mannschaftsname;
                 PlayerInput.Text = spieler.Spielername;
+                StaatsangehörigkeitInput.Text = spieler.Staatsangehörigkeit;
+                GeburtstagInput.Text = spieler.Geburtstag;
+                GeburtsortInput.Text = spieler.Geburtsort;
                 AlterInput.Text = spieler.Alter.ToString();
                 GrößeInput.Text = spieler.Größe;
                 PositionInput.Text = spieler.Position;
                 TransferwertInput.Text = spieler.Transferwert;
+                AktNationalspielerInput.Text = spieler.AktNationalspieler;
                 LänderspieleToreInput.Text = spieler.LänderspieleTore;
+
+                this.tmpfilepath = spieler.filepath;
 
                 LöschenButton_Click(sender, e);
             }
@@ -270,7 +306,55 @@ namespace FußballManager
                     string targetFilePath = Path.Combine(targetFolder, fileName);
 
                     File.Copy(sourceFilePath, targetFilePath, true);
+
+                    string spielerName = PlayerList.SelectedItem?.ToString();
+
+                    if (spielerName != null)
+                    {
+                        Spieler spieler = spielerList.Find(spieler => spieler.Spielername == spielerName);
+                        spieler.filepath = targetFilePath;
+
+                        SpeicherButton_Click(sender, e);
+                    }
                 }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StaatsangehörigkeitInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
+            }
+        }
+
+        private void GeburtstagInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
+            }
+        }
+
+        private void GeburtsortInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            HinzuButton_Click(sender, e);
+            SpeicherButton_KeyPress(sender, e);
+        }
+
+        private void AktNationalspielerInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                HinzuButton_Click(sender, e);
+                SpeicherButton_KeyPress(sender, e);
             }
         }
     }

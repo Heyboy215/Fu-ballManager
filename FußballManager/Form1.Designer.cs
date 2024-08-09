@@ -58,6 +58,18 @@
             Größe = new Label();
             pictureBox1 = new PictureBox();
             BildHochladen = new Button();
+            GeburtstagInput = new TextBox();
+            StaatsangehörigkeitInput = new TextBox();
+            GeburtsortInput = new TextBox();
+            AktNationalspielerInput = new TextBox();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            AktNationalspieler = new Label();
+            Staatsangehörigkeit = new Label();
+            Geburtstag = new Label();
+            Geburtsort = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -124,7 +136,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(1069, 137);
+            label3.Location = new Point(1069, 212);
             label3.Name = "label3";
             label3.Size = new Size(53, 25);
             label3.TabIndex = 11;
@@ -135,7 +147,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = SystemColors.Window;
-            label4.Location = new Point(1069, 187);
+            label4.Location = new Point(1069, 262);
             label4.Name = "label4";
             label4.Size = new Size(79, 25);
             label4.TabIndex = 12;
@@ -146,7 +158,7 @@
             // 
             Mannschaftsname.AutoSize = true;
             Mannschaftsname.ForeColor = SystemColors.Window;
-            Mannschaftsname.Location = new Point(1245, 87);
+            Mannschaftsname.Location = new Point(1256, 87);
             Mannschaftsname.Name = "Mannschaftsname";
             Mannschaftsname.Size = new Size(0, 25);
             Mannschaftsname.TabIndex = 13;
@@ -155,7 +167,7 @@
             // 
             Spielername.AutoSize = true;
             Spielername.ForeColor = SystemColors.Window;
-            Spielername.Location = new Point(1245, 112);
+            Spielername.Location = new Point(1256, 112);
             Spielername.Name = "Spielername";
             Spielername.Size = new Size(0, 25);
             Spielername.TabIndex = 14;
@@ -164,7 +176,7 @@
             // 
             Alter.AutoSize = true;
             Alter.ForeColor = SystemColors.Window;
-            Alter.Location = new Point(1245, 137);
+            Alter.Location = new Point(1256, 212);
             Alter.Name = "Alter";
             Alter.Size = new Size(0, 25);
             Alter.TabIndex = 15;
@@ -173,7 +185,7 @@
             // 
             Position.AutoSize = true;
             Position.ForeColor = SystemColors.Window;
-            Position.Location = new Point(1245, 187);
+            Position.Location = new Point(1256, 262);
             Position.Name = "Position";
             Position.Size = new Size(0, 25);
             Position.TabIndex = 16;
@@ -191,7 +203,7 @@
             // AlterInput
             // 
             AlterInput.BackColor = Color.Ivory;
-            AlterInput.Location = new Point(11, 118);
+            AlterInput.Location = new Point(10, 297);
             AlterInput.Name = "AlterInput";
             AlterInput.PlaceholderText = "Hier Alter eingeben!";
             AlterInput.Size = new Size(407, 31);
@@ -202,7 +214,7 @@
             // PositionInput
             // 
             PositionInput.BackColor = Color.Ivory;
-            PositionInput.Location = new Point(11, 222);
+            PositionInput.Location = new Point(10, 407);
             PositionInput.Name = "PositionInput";
             PositionInput.PlaceholderText = "Hier Position eingeben!";
             PositionInput.Size = new Size(407, 31);
@@ -259,7 +271,7 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = SystemColors.ControlLight;
-            label6.Location = new Point(1069, 212);
+            label6.Location = new Point(1069, 287);
             label6.Name = "label6";
             label6.Size = new Size(96, 25);
             label6.TabIndex = 18;
@@ -270,7 +282,7 @@
             // 
             Transferwert.AutoSize = true;
             Transferwert.ForeColor = SystemColors.ControlLight;
-            Transferwert.Location = new Point(1245, 212);
+            Transferwert.Location = new Point(1256, 287);
             Transferwert.Name = "Transferwert";
             Transferwert.Size = new Size(0, 25);
             Transferwert.TabIndex = 19;
@@ -278,7 +290,7 @@
             // TransferwertInput
             // 
             TransferwertInput.BackColor = Color.Ivory;
-            TransferwertInput.Location = new Point(11, 275);
+            TransferwertInput.Location = new Point(11, 463);
             TransferwertInput.Name = "TransferwertInput";
             TransferwertInput.PlaceholderText = "Hier Marktwert eingeben!";
             TransferwertInput.Size = new Size(407, 31);
@@ -289,7 +301,7 @@
             // LänderspieleToreInput
             // 
             LänderspieleToreInput.BackColor = Color.Ivory;
-            LänderspieleToreInput.Location = new Point(11, 329);
+            LänderspieleToreInput.Location = new Point(10, 580);
             LänderspieleToreInput.Name = "LänderspieleToreInput";
             LänderspieleToreInput.PlaceholderText = "Hier Länderspiele/Tore eingeben!";
             LänderspieleToreInput.Size = new Size(407, 31);
@@ -299,7 +311,7 @@
             // GrößeInput
             // 
             GrößeInput.BackColor = Color.Ivory;
-            GrößeInput.Location = new Point(11, 171);
+            GrößeInput.Location = new Point(11, 354);
             GrößeInput.Name = "GrößeInput";
             GrößeInput.PlaceholderText = "Hier Größe eingeben!";
             GrößeInput.Size = new Size(407, 31);
@@ -311,7 +323,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.ControlLight;
-            label7.Location = new Point(1069, 237);
+            label7.Location = new Point(1069, 337);
             label7.Name = "label7";
             label7.Size = new Size(154, 25);
             label7.TabIndex = 23;
@@ -321,7 +333,7 @@
             // 
             LänderspieleTore.AutoSize = true;
             LänderspieleTore.ForeColor = SystemColors.ControlLight;
-            LänderspieleTore.Location = new Point(1245, 237);
+            LänderspieleTore.Location = new Point(1256, 337);
             LänderspieleTore.Name = "LänderspieleTore";
             LänderspieleTore.Size = new Size(0, 25);
             LänderspieleTore.TabIndex = 24;
@@ -330,7 +342,7 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = SystemColors.ControlLight;
-            label8.Location = new Point(1069, 162);
+            label8.Location = new Point(1069, 237);
             label8.Name = "label8";
             label8.Size = new Size(64, 25);
             label8.TabIndex = 25;
@@ -340,14 +352,14 @@
             // 
             Größe.AutoSize = true;
             Größe.ForeColor = SystemColors.ControlLight;
-            Größe.Location = new Point(1245, 162);
+            Größe.Location = new Point(1256, 237);
             Größe.Name = "Größe";
             Größe.Size = new Size(0, 25);
             Größe.TabIndex = 26;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(1049, 403);
+            pictureBox1.Location = new Point(1049, 407);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(408, 412);
             pictureBox1.TabIndex = 27;
@@ -369,18 +381,147 @@
             BildHochladen.UseVisualStyleBackColor = false;
             BildHochladen.Click += BildHochladen_Click;
             // 
+            // GeburtstagInput
+            // 
+            GeburtstagInput.BackColor = Color.Ivory;
+            GeburtstagInput.Location = new Point(10, 181);
+            GeburtstagInput.Name = "GeburtstagInput";
+            GeburtstagInput.PlaceholderText = "Hier Geburtstag eingeben!";
+            GeburtstagInput.Size = new Size(407, 31);
+            GeburtstagInput.TabIndex = 29;
+            GeburtstagInput.TextChanged += textBox1_TextChanged;
+            GeburtstagInput.KeyPress += GeburtstagInput_KeyPress;
+            // 
+            // StaatsangehörigkeitInput
+            // 
+            StaatsangehörigkeitInput.BackColor = Color.Ivory;
+            StaatsangehörigkeitInput.Location = new Point(11, 121);
+            StaatsangehörigkeitInput.Name = "StaatsangehörigkeitInput";
+            StaatsangehörigkeitInput.PlaceholderText = "Hier Staatsangehörigkeit eingeben!";
+            StaatsangehörigkeitInput.Size = new Size(407, 31);
+            StaatsangehörigkeitInput.TabIndex = 30;
+            StaatsangehörigkeitInput.KeyPress += StaatsangehörigkeitInput_KeyPress;
+            // 
+            // GeburtsortInput
+            // 
+            GeburtsortInput.BackColor = Color.Ivory;
+            GeburtsortInput.Location = new Point(10, 237);
+            GeburtsortInput.Name = "GeburtsortInput";
+            GeburtsortInput.PlaceholderText = "Hier Geburtsort eingeben!";
+            GeburtsortInput.Size = new Size(407, 31);
+            GeburtsortInput.TabIndex = 31;
+            GeburtsortInput.KeyPress += GeburtsortInput_KeyPress;
+            // 
+            // AktNationalspielerInput
+            // 
+            AktNationalspielerInput.BackColor = Color.Ivory;
+            AktNationalspielerInput.Location = new Point(10, 521);
+            AktNationalspielerInput.Name = "AktNationalspielerInput";
+            AktNationalspielerInput.PlaceholderText = "Hier Akt. Nationalspieler eingeben!";
+            AktNationalspielerInput.Size = new Size(407, 31);
+            AktNationalspielerInput.TabIndex = 32;
+            AktNationalspielerInput.KeyPress += AktNationalspielerInput_KeyPress;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.ForeColor = SystemColors.ControlLight;
+            label9.Location = new Point(1069, 137);
+            label9.Name = "label9";
+            label9.Size = new Size(172, 25);
+            label9.TabIndex = 33;
+            label9.Text = "Staatsangehörigkeit:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.ForeColor = SystemColors.ControlLight;
+            label10.Location = new Point(1069, 162);
+            label10.Name = "label10";
+            label10.Size = new Size(104, 25);
+            label10.TabIndex = 34;
+            label10.Text = "Geburtstag:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.ForeColor = SystemColors.ControlLight;
+            label11.Location = new Point(1069, 187);
+            label11.Name = "label11";
+            label11.Size = new Size(101, 25);
+            label11.TabIndex = 35;
+            label11.Text = "Geburtsort:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.ForeColor = SystemColors.ControlLight;
+            label12.Location = new Point(1069, 312);
+            label12.Name = "label12";
+            label12.Size = new Size(169, 25);
+            label12.TabIndex = 36;
+            label12.Text = "Akt. Nationalspieler:";
+            // 
+            // AktNationalspieler
+            // 
+            AktNationalspieler.AutoSize = true;
+            AktNationalspieler.ForeColor = SystemColors.ControlLight;
+            AktNationalspieler.Location = new Point(1256, 312);
+            AktNationalspieler.Name = "AktNationalspieler";
+            AktNationalspieler.Size = new Size(0, 25);
+            AktNationalspieler.TabIndex = 37;
+            // 
+            // Staatsangehörigkeit
+            // 
+            Staatsangehörigkeit.AutoSize = true;
+            Staatsangehörigkeit.ForeColor = SystemColors.ControlLight;
+            Staatsangehörigkeit.Location = new Point(1256, 137);
+            Staatsangehörigkeit.Name = "Staatsangehörigkeit";
+            Staatsangehörigkeit.Size = new Size(0, 25);
+            Staatsangehörigkeit.TabIndex = 38;
+            // 
+            // Geburtstag
+            // 
+            Geburtstag.AutoSize = true;
+            Geburtstag.ForeColor = SystemColors.ControlLight;
+            Geburtstag.Location = new Point(1256, 162);
+            Geburtstag.Name = "Geburtstag";
+            Geburtstag.Size = new Size(0, 25);
+            Geburtstag.TabIndex = 39;
+            // 
+            // Geburtsort
+            // 
+            Geburtsort.AutoSize = true;
+            Geburtsort.ForeColor = SystemColors.ControlLight;
+            Geburtsort.Location = new Point(1256, 187);
+            Geburtsort.Name = "Geburtsort";
+            Geburtsort.Size = new Size(0, 25);
+            Geburtsort.TabIndex = 40;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1469, 874);
+            Controls.Add(Geburtsort);
+            Controls.Add(Geburtstag);
+            Controls.Add(Staatsangehörigkeit);
+            Controls.Add(AktNationalspieler);
+            Controls.Add(LänderspieleTore);
+            Controls.Add(label7);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(AktNationalspielerInput);
+            Controls.Add(GeburtsortInput);
+            Controls.Add(StaatsangehörigkeitInput);
+            Controls.Add(GeburtstagInput);
             Controls.Add(BildHochladen);
             Controls.Add(pictureBox1);
             Controls.Add(Größe);
             Controls.Add(label8);
-            Controls.Add(LänderspieleTore);
-            Controls.Add(label7);
             Controls.Add(GrößeInput);
             Controls.Add(LänderspieleToreInput);
             Controls.Add(TransferwertInput);
@@ -445,5 +586,17 @@
         private Label Größe;
         private PictureBox pictureBox1;
         private Button BildHochladen;
+        private TextBox GeburtstagInput;
+        private TextBox StaatsangehörigkeitInput;
+        private TextBox GeburtsortInput;
+        private TextBox AktNationalspielerInput;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label AktNationalspieler;
+        private Label Staatsangehörigkeit;
+        private Label Geburtstag;
+        private Label Geburtsort;
     }
 }
